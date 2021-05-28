@@ -1,5 +1,9 @@
 
 def leap_year(year):
+    if year < 0:
+        raise ValueError ("Invalid input")
+
+    
     if(year % 4 == 0 and year % 100 != 0 or year % 400 == 0):
         return "It is a leap year!"
     else:
